@@ -136,7 +136,7 @@ const Navbar = () => {
         <ul>
           <li className="w-[160px] h-[60px] flex justify-between items-center ml-[-100px] hover:ml-[-10px] duration-300 bg-slate-200 rounded-e-2xl font-semibold">
             <a
-              href="https://www.linkedin.com/in/shivam-jain-9a88862b5/"
+              href="www.linkedin.com/in/shivamjain1411"
               className="flex justify-between items-center w-full text-[#3A1078]"
             >
               Linkedin <FaLinkedin size={30} />
