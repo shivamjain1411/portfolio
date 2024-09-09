@@ -4,9 +4,10 @@ import AOS from 'aos';
 import 'aos/dist/aos.css';
 
 const Contact = () => {
-    useEffect(() => {
-        AOS.init();
-      }, []);
+  useEffect(() => {
+    AOS.init();
+  }, []);
+
   return (
     <div
       name="contact"
@@ -25,43 +26,53 @@ const Contact = () => {
 
         {/* Form */}
         <div className="">
-          <form action="mailto:jainshivam312@gmail.com">
+          <form
+            action="https://formcarry.com/s/PLn_X58NgyN" // Replace with your Formcarry endpoint
+            method="POST"
+          >
             <input
               type="text"
               placeholder="Name"
               name="name"
               className="bg-gray-100 text-gray-950 p-2 w-full rounded-md active:border-[#00FFCA] active:border-2"
-              data-aos="fade-down" data-aos-duration="600" data-aos-easing="linear"
+              data-aos="fade-down"
+              data-aos-duration="600"
+              data-aos-easing="linear"
+              required
             />
             <input
               type="email"
               placeholder="Email"
               name="email"
               className="my-4 p-2 bg-gray-100 text-gray-950 w-full rounded-md active:border-[#00FFCA] active:border-2"
-              data-aos="fade-down" data-aos-duration="800" data-aos-easing="linear"
+              data-aos="fade-down"
+              data-aos-duration="800"
+              data-aos-easing="linear"
+              required
             />
             <textarea
               name="message"
               className="bg-gray-100 p-2 w-full text-gray-950 rounded-md active:border-[#00FFCA] active:border-2"
-              data-aos="fade-down" data-aos-duration="1000" data-aos-easing="linear"
+              data-aos="fade-down"
+              data-aos-duration="1000"
+              data-aos-easing="linear"
               placeholder="Message"
               rows="10"
+              required
             ></textarea>
-        <div className="mt-4 mx">
-          <button
-            onClick=""
-            className="text-white group border-2 px-6 py-3 my-2 flex items-center hover:bg-[#00FFCA] hover:border-[#00FFCA] rounded-sm hover:text-[#3A1078] font-semibold"
-          >
-            Send Message
-            <span className="group-hover:translate-x-1 duration-300">
-              <IoSendSharp className="ml-4" />
-            </span>
-          </button>
-        </div>
+            <div className="mt-4">
+              <button
+                type="submit" // This will handle form submission
+                className="text-white group border-2 px-6 py-3 my-2 flex items-center hover:bg-[#00FFCA] hover:border-[#00FFCA] rounded-sm hover:text-[#3A1078] font-semibold"
+              >
+                Send Message
+                <span className="group-hover:translate-x-1 duration-300">
+                  <IoSendSharp className="ml-4" />
+                </span>
+              </button>
+            </div>
           </form>
         </div>
-
-        {/* Send Message Button */}
       </div>
     </div>
   );
