@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import Logo from "../assets/logo.png";
-import { FaTimes, FaGithub, FaLinkedin, FaBehance } from "react-icons/fa";
+import { FaTimes, FaGithub, FaLinkedin} from "react-icons/fa";
 import { BsGridFill } from "react-icons/bs";
 import { HiArrowSmUp, HiMail } from "react-icons/hi";
 import { Link } from "react-scroll";
